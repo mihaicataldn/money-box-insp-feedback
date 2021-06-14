@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fragment_loggedin_loggedInUser_inspector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="User "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.443"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextQuestion1"
+                android:layout_width="268dp"
+                android:layout_height="97dp"
+                android:ems="10"
+                android:hint="Good"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/editTextQuestion2"
+                android:layout_width="266dp"
+                android:layout_height="112dp"
+                android:ems="10"
+                android:hint="Good"
+                android:inputType="text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you happy with moneybox?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="99dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="How much did you save using moneybox?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/na_button1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="How can we make this app better?"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextQuestion2" />
+
+            <EditText
+                android:id="@+id/editTextQuestion3"
+                android:layout_width="269dp"
+                android:layout_height="96dp"
+                android:ems="10"
+                android:hint="Good"
+                android:inputType="text"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/saveTheInspectionButton"
+                android:layout_width="123dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="276dp"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/na_button3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/tempSaveTheInspectionButton"
+                android:layout_width="121dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Temp Save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/saveTheInspectionButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextQuestion3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/tempClearTheInspectionButton"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="20dp"
+                android:text="Clear temp save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/saveTheInspectionButton"
+                app:layout_constraintHorizontal_bias="0.921"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextQuestion3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextTextTypeTitle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Type a title"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_loggedin_loggedInUser_inspector" />
+
+            <Switch
+                android:id="@+id/na_button1"
+                android:layout_width="118dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="N/A"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion1"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="116dp"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="Rate 1-100"
+                android:inputType="number"
+                android:maxLength="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion1"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextTypeTitle" />
+
+            <Switch
+                android:id="@+id/na_button2"
+                android:layout_width="113dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="N/A"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+            <Switch
+                android:id="@+id/na_button3"
+                android:layout_width="112dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:text="N/A"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="116dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="44dp"
+                android:ems="10"
+                android:hint="Rate 1-100"
+                android:inputType="number"
+                android:maxLength="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion2"
+                app:layout_constraintTop_toBottomOf="@+id/na_button1" />
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="116dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Rate 1-100"
+                android:maxLength="3"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextQuestion3"
+                app:layout_constraintTop_toBottomOf="@+id/na_button2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

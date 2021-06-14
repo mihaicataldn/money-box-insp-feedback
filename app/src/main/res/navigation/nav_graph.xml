@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/loginRegisterFragment">
+
+    <fragment
+        android:id="@+id/loginRegisterFragment"
+        android:name="com.example.appinspection.views.LoginRegisterFragment"
+        android:label="LoginRegisterFragment" >
+        <action
+            android:id="@+id/action_loginRegisterFragment_to_loggedInFragment"
+            app:destination="@id/loggedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loggedInFragment"
+        android:name="com.example.appinspection.views.LoggedInFragment"
+        android:label="LoggedInFragment" >
+        <action
+            android:id="@+id/action_loggedInFragment_to_loginRegisterFragment"
+            app:destination="@id/loginRegisterFragment" />
+        <action
+            android:id="@+id/action_loggedInFragment_to_makeInspectionFragment"
+            app:destination="@id/makeInspectionFragment" />
+        <action
+            android:id="@+id/action_loggedInFragment_to_allInspectionsFragment"
+            app:destination="@id/allInspectionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeInspectionFragment"
+        android:name="com.example.appinspection.views.MakeInspectionFragment"
+        android:label="MakeInspectionFragment" >
+        <action
+            android:id="@+id/action_makeInspectionFragment_to_loggedInFragment"
+            app:destination="@id/loggedInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allInspectionsFragment"
+        android:name="com.example.appinspection.views.AllInspectionsFragment"
+        android:label="AllInspectionsFragment" />
+</navigation>

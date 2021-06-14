@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433744407687",
+    "project_id": "app-inspection-be710",
+    "storage_bucket": "app-inspection-be710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433744407687:android:776af3cfa63daa9bd8dc22",
+        "android_client_info": {
+          "package_name": "com.example.appinspection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433744407687-urps0tjt5o3psm5omn9ru187kqretc2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuBpYQx091QXIn4MqGWUCs0sQYQv42lG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433744407687-urps0tjt5o3psm5omn9ru187kqretc2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
